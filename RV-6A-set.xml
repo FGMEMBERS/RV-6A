@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- 
+  "set" file for RV-6
+  Authors: K.T (Panel / Texture), tetsu (3D Model), Tatsuhiro Nishioka (FDM, nasal, etc)
+  $Id$
+ -->
+
+<PropertyList include="RV-6A-base.xml">
+
+  <sim>
+    <description>RV-6A (YASim)</description>
+    <author>K.T (Panel/Texture), tetsu (3D Model), Tatsuhiro Nishioka(FDM, nasal, etc)</author>
+    <aircraft-version>0.1</aircraft-version>
+
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">RV-6A-yasim</aero>
+
+  </sim>
+
+</PropertyList>
