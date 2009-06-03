@@ -10,9 +10,11 @@
    <top-livery>
     <texture>rw1_top.png</texture>
    </top-livery>
+<!--
    <prop-livery>
     <texture>prop.png</texture>
    </prop-livery>
+-->
   </model>
  </sim>
 </PropertyList>

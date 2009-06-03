@@ -59,6 +59,13 @@
     <texture>rv6a_Top_tpl.png</texture>
   </animation>
 
+<!--
+  applying livery texture with alpha channel 
+  makes propeller invisible from cockpit in 1.9.1
+  so I comment this out. This problem doesn't occur 
+  on FG/CVS as of May, 2009. so you can uncoment 
+  this (and related comments in Livery/*.xml)
+  if you are using FG/CVS
   <animation>
     <type>material</type>
     <object-name>propblur</object-name>
@@ -69,6 +76,8 @@
     <texture-prop>texture</texture-prop>
     <texture>prop.png</texture>
   </animation>
+-->
+
   <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>
