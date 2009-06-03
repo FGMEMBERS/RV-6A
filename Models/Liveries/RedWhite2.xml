@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Red/White 2</name>
+    <texture>rw2_side.png</texture>
+   </livery>
+   <top-livery>
+    <texture>rw2_top.png</texture>
+   </top-livery>
+   <prop-livery>
+    <texture>prop.png</texture>
+   </prop-livery>
+  </model>
+ </sim>
+</PropertyList>

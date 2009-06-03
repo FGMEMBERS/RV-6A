@@ -8,7 +8,67 @@
 
 <PropertyList>
   <path>RV-6A.ac</path>
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/RV-6A/Models/Liveries", 10);
+    </load>
 
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <animation>
+    <type>material</type>
+    <object-name>Canopy.frame.front</object-name>
+    <object-name>Canopy.frame.middle</object-name>
+    <object-name>Canopy.frame.rear</object-name>
+    <object-name>Fuselage.front</object-name>
+    <object-name>Fuselage.left</object-name>
+    <object-name>Fuselage.right</object-name>
+    <object-name>Vstab.left</object-name>
+    <object-name>Vstab.right</object-name>
+    <object-name>Intake</object-name>
+    <object-name>Wheel.main</object-name>
+    <object-name>Wheel.front</object-name>
+    <object-name>Spinner</object-name>
+    <object-name>Gear.front</object-name>
+    <object-name>Gear.main</object-name>
+    <object-name>rudder</object-name>
+    <object-name>rudder.1</object-name>
+    <object-name>Cube.007</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>rv6a_side.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Hstab</object-name>
+    <object-name>elevator</object-name>
+    <object-name>ElevatorTrimTab.L</object-name>
+    <object-name>ElevatorTrimTab.R</object-name>
+    <object-name>aileron.Left</object-name>
+    <object-name>aileron.Right</object-name>
+    <object-name>Wing.left</object-name>
+    <object-name>Wing.right</object-name>
+    <object-name>flap.Left</object-name>
+    <object-name>flap.Right</object-name>
+    <property-base>sim/model/top-livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>rv6a_Top_tpl.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>propblur</object-name>
+    <object-name>Propeller.Slow</object-name>
+    <object-name>Propeller.Fast</object-name>
+    <object-name>shadow</object-name>
+    <property-base>sim/model/prop-livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>prop.png</texture>
+  </animation>
   <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>

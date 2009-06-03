@@ -7,7 +7,7 @@ name "shadow"
 loc 1.84209 -1.14 0
 data 6
 shadow
-texture "prop.rgb"
+texture "prop.png"
 crease 30.000000
 numvert 4
 -3.70378 0 -3.71964

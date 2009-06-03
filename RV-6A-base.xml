@@ -28,6 +28,9 @@
 
     <model>
       <path archive="y">Aircraft/RV-6A/Models/RV-6A.xml</path>
+      <livery>
+        <file type="string">Default</file>
+      </livery>
     </model>
 
     <panel>
@@ -61,6 +64,21 @@
       <max-lb>60</max-lb>
     </weight>
 
+    <menubar>
+     <default>
+      <menu n="100">
+       <label>RV-6A</label>
+       <enabled type="bool">true</enabled>
+       <item>
+        <label>Select Livery</label>
+        <binding>
+         <command>nasal</command>
+         <script>aircraft.livery.dialog.open()</script>
+        </binding>
+       </item>
+      </menu>
+     </default>
+    </menubar>
   </sim>
 
   <engines>
@@ -89,6 +107,7 @@
       <file>Aircraft/RV-6A/Nasal/temperature.nas</file>
       <file>Aircraft/RV-6A/Nasal/action.nas</file>
       <file>Aircraft/RV-6A/Nasal/adjuster.nas</file>
+      <file>Aircraft/RV-6A/Nasal/liveries.nas</file>
     </RV-6A>
   </nasal>
 
