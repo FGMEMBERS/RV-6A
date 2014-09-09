@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">Blue/Yellow</name>
+    <texture>by_side.png</texture>
+   </livery>
+   <top-livery>
+    <texture>by_top.png</texture>
+   </top-livery>
+<!--
+   <prop-livery>
+    <texture>prop.png</texture>
+   </prop-livery>
+-->
+  </model>
+ </sim>
+</PropertyList>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>ASI.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>Face</object-name>
+  <object-name>PointerTip</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>0.2</green>
+   <blue>0.0</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>PointerCentre</object-name>
+  <object-name>PointerTip</object-name>
+  <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+  <interpolation>
+   <entry><ind>  0</ind><dep>  0</dep></entry>
+   <entry><ind> 40</ind><dep> 36</dep></entry>
+   <entry><ind> 50</ind><dep> 52</dep></entry>
+   <entry><ind> 60</ind><dep> 70</dep></entry>
+   <entry><ind> 70</ind><dep> 93</dep></entry>
+   <entry><ind> 80</ind><dep>115</dep></entry>
+   <entry><ind> 90</ind><dep>138</dep></entry>
+   <entry><ind>100</ind><dep>160</dep></entry>
+   <entry><ind>110</ind><dep>185</dep></entry>
+   <entry><ind>120</ind><dep>203</dep></entry>
+   <entry><ind>130</ind><dep>222</dep></entry>
+   <entry><ind>140</ind><dep>238</dep></entry>
+   <entry><ind>150</ind><dep>254</dep></entry>
+   <entry><ind>160</ind><dep>267</dep></entry>
+   <entry><ind>170</ind><dep>282</dep></entry>
+   <entry><ind>180</ind><dep>294</dep></entry>
+   <entry><ind>190</ind><dep>310</dep></entry>
+   <entry><ind>200</ind><dep>323</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <model>
+   <livery>
+    <name type="string">zero1962</name>
+    <texture>rv6a_side.png</texture>
+   </livery>
+   <top-livery>
+    <texture>rv6a_Top_tpl.png</texture>
+   </top-livery>
+<!--
+   <prop-livery>
+    <texture>prop.png</texture>
+   </prop-livery>
+-->
+  </model>
+ </sim>
+</PropertyList>

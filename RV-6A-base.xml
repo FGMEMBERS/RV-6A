@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!-- 
+  Base "set" file for RV-6A
+  Authors: K.T (Panel / Texture), tetsu (3D Model), Tatsuhiro Nishioka (FDM, nasal, etc)
+  $Id$
+ -->
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+    <status>development</status>
+
+    <fuel-fraction>0.75</fuel-fraction>
+
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.50</setting>
+      <setting>1.00</setting>
+    </flaps>
+
+    <startup>
+      <splash-texture>Aircraft/RV-6A/RV-6A-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/RV-6A/Sounds/RV-6A-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/RV-6A/Models/RV-6A.xml</path>
+      <livery>
+        <file type="string">Default</file>
+      </livery>
+    </model>
+
+    <panel>
+      <visibility archive="y">ture</visibility>
+    </panel>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay>
+
+    <help>
+      <title>RV-6A</title>
+      <line>______________________________________________</line>
+    </help>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>170</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Copilot</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Bagages</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>60</max-lb>
+    </weight>
+
+    <menubar>
+     <default>
+      <menu n="100">
+       <label>RV-6A</label>
+       <enabled type="bool">true</enabled>
+       <item>
+        <label>Select Livery</label>
+        <binding>
+         <command>nasal</command>
+         <script>aircraft.livery.dialog.open()</script>
+        </binding>
+       </item>
+      </menu>
+     </default>
+    </menubar>
+  </sim>
+
+  <engines>
+    <engine>
+      <rpm type="double">700</rpm>
+    </engine>
+  </engines>
+  <controls>
+    <engines>
+      <engine>
+        <mixture archive="y"> 1.00 </mixture>
+        <propeller-feather type="bool"> false </propeller-feather>
+      </engine>
+    </engines>
+  </controls>
+
+  <input>
+    <keyboard include="Nasal/RV-6A-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <RV-6A>
+      <file>Aircraft/RV-6A/Nasal/RV-6A.nas</file>
+      <file>Aircraft/RV-6A/Nasal/instruments.nas</file>
+      <file>Aircraft/RV-6A/Nasal/electrical.nas</file>
+      <file>Aircraft/RV-6A/Nasal/temperature.nas</file>
+      <file>Aircraft/RV-6A/Nasal/action.nas</file>
+      <file>Aircraft/RV-6A/Nasal/adjuster.nas</file>
+      <file>Aircraft/RV-6A/Nasal/liveries.nas</file>
+    </RV-6A>
+  </nasal>
+
+</PropertyList>
